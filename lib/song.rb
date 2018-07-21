@@ -6,6 +6,7 @@ class Song
 
   extend Memorable
   extend Findable
+  include Paramable
   
   @@songs = []
 
@@ -21,9 +22,7 @@ class Song
     @@songs.clear
   end
 
-  def to_param
-    name.downcase.gsub(' ', '-')
-  end
+
 
 
 
