@@ -22,7 +22,6 @@ class Artist
   end
 
   def add_song(song)
-    super
     song.artist = self
   end
 
